@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check out RooUnfold
+
+git clone https://gitlab.cern.ch/RooUnfold/RooUnfold.git
+cd RooUnfold
+make
+
+export ROOUNFOLD=$(PWD) 
+export LD_LIBRARY_PATH=$ROOUNFOLD:$LD_LIBRARY_PATH
