@@ -12,9 +12,9 @@ mkdir cmake
 git clone https://gitlab.cern.ch/RooUnfold/RooUnfold.git
 mkdir RooUnfold/build
 cd RooUnfold/build
-$HOME/cmake-3.22.2-linux-x86_64/bin/cmake ../ -DCMAKE_INSTALL_PREFIX=$HOME/RooUnfold_install 
-make
-make install
+$HOME/cmake/bin/cmake ../ -DCMAKE_INSTALL_PREFIX=$HOME/RooUnfold_install 
+make RooUnfold
+# make install
 
-#export ROOUNFOLD=$(PWD) 
-#export LD_LIBRARY_PATH=$ROOUNFOLD:$LD_LIBRARY_PATH
+export ROOUNFOLD=$(PWD) 
+export LD_LIBRARY_PATH=$ROOUNFOLD:$LD_LIBRARY_PATH
