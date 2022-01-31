@@ -13,7 +13,7 @@ git clone https://gitlab.cern.ch/RooUnfold/RooUnfold.git
 mkdir RooUnfold/build
 cd RooUnfold/build
 $HOME/cmake/bin/cmake ../
-make
+make RooUnfold
 
 export ROOUNFOLD=$(PWD) 
 export LD_LIBRARY_PATH=$ROOUNFOLD:$LD_LIBRARY_PATH
